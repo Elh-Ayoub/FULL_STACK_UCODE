@@ -1,0 +1,45 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#city{
+    background: linear-gradient(#cce3fa, #1a8cff) ;
+    text-align: center;
+    padding: 10px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+}
+.main{
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.forecast{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 20px;
+}
+#day{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 10px;
+    margin: 20px auto;
+}
+#day:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Date{
+    width: max-content;
+    padding: 10px 40px;
+    border-bottom: 1px solid cyan;
+}
+.Temp{
+    padding: 10px 20px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0px;
+}

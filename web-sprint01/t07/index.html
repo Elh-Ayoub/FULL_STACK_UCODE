@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>T07</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="header_list">
+                <li>Oscorp</li>
+                <li>about</li>
+                <li>service</li>
+                <li>contact</li>
+                <li><input type="text" placeholder="search"></li>
+                <li>Phone: 0987654321</li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="nav2">
+        <ul>
+            <li><a href="#home">Home</a></li>/
+            <li>Catalog</li>/
+            <li>Product</li>/
+        </ul>
+    </nav>
+    <h1 id="home">Food Order</h1>
+    <div class="home_page">
+        <form class="filter">
+            <label>Filter food</label>
+            <div>
+                <input type="checkbox"><label>Pizza</label><br>
+                <input type="checkbox"><label>Sandwiches</label><br>
+                <input type="checkbox"><label>Burger</label><br>
+                <input type="checkbox"><label>Doner</label><br>
+                <input type="checkbox"><label>Pancackes</label><br><br>
+            </div>
+            <label>Price</label>
+            <input type="range" min="0" max="200">
+        </form>
+        <div class="products-center">
+            <a href="card.html">
+                <article>
+                    <div class="img-container">
+                        <div class="slider-container">
+                            <img src="assets/images/pizza.jpg" alt="product"/>
+                        </div>
+                        <button class="buy-button" data-id="1">
+                            Buy
+                        </button>
+                    </div>
+                    <h2>Greek Pizza</h2>
+                    <h3>120 UAH</h3>
+                </article>
+            </a>
+            <a>
+                <article>
+                    <div class="img-container">
+                        <div class="slider-container">
+                            <img src="assets/images/rainbow-sandwish.jpg" alt="product"/>
+                        </div>
+                        <button class="not-evailable-button" data-id="1">
+                            Not available
+                        </button>
+                    </div>
+                    <h2>Rainbow sandwich</h2>
+                    <h3>80 UAH</h3>
+                </article>
+            </a>
+            <a>
+                <article>
+                    <div class="img-container">
+                        <div class="slider-container">
+                            <img src="assets/images/burger.jpg" alt="product"
+    />
+                        </div>
+                        <button class="not-evailable-button" data-id="1">
+                            Not available
+                        </button>
+                    </div>
+                    <h2>Burger</h2>
+                    <h3>150 UAH</h3>
+                </article>
+            </a>
+            <a>
+                <article>
+                    <div class="img-container">
+                        <div class="slider-container">
+                            <img src="assets/images/doner.jpg" alt="product"
+    />
+                        </div>
+                        <button class="not-evailable-button" data-id="1">
+                            Not available
+                        </button>
+                    </div>
+                    <h2>Kabab Doner</h2>
+                    <h3>75 UAH</h3>
+                </article>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

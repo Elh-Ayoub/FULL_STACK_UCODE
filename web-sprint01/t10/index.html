@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>t10</title>
+    <meta name="description" content="t10">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 id="title">Settings</h1>
+    <form action="/" method="post">
+        <div class="left-menu">
+            <div class="left-menu-block typeface">
+                <label class="options_names">Typeface</label>
+            </div>
+            <div class="custom-select">
+                <select>
+                    <option>Acunim Pro</option>
+                    <option>Comic Sans</option>
+                    <option disabled>Times New Roman</option>
+                </select>
+                <svg class="select-icon" focusable="false" width="30" viewBox="0 0 30 30">
+                    <path d="M22.782 13.8L17 19.582 11.218 13.8a1 1 0 0 0-1.414 1.414L16.29 21.7a.992.992 0 0 0 .71.292.997.997 0 0 0 .71-.292l6.486-6.486a1 1 0 0 0-1.414-1.414z" />
+                </svg>
+            </div>
+            <div>
+                <div class="dark">
+                    <label class="options_names">Dark UI</label>
+                    <div class="background-style">
+                        <input id="background-style" type="checkbox"/>
+                        <label for="background-style"></label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="options_names">Weight</label>
+                <div class="weight">
+                    <input id="regu" type="radio" name="font" checked><label for="regu"></label>
+                    <label>Regular</label>
+                    <input id="bold" type="radio" name="font"><label for="bold"></label>
+                    <label>Bold</label>
+                </div>
+            </div>
+            <div>
+                <label class="options_names">Color</label>
+                <div class="color">
+                    <input id="blue_color" type="checkbox"><label for="blue_color" class="blue_color"></label>
+                    <input id="green_color" type="checkbox" checked><label for="green_color" class="green_color"></label>
+                    <input id="purple_color" type="checkbox"><label for="purple_color" class="purple_color"></label>
+                    <input id="yellow_color" type="checkbox"><label for="yellow_color" class="yellow_color"></label>
+                    <input id="orange_color" type="checkbox" checked><label for="orange_color" class="orange_color"></label>
+                </div>
+            </div>
+            <div>
+                <label class="options_names">Size</label>
+                <input type="range" min="1" max="100" value="50" class="horizontal_slider" id="myRange">
+                <div class="slider label-text-style">
+                    <label>A</label>
+                    <label id="big-text">A</label>
+                </div>
+            </div>
+        </div>
+        <div class="right-menu">
+            <img src="assets/images/artistic-brush.png" alt="Artistic brush">
+            <img src="assets/images/user-icon.png" alt="User icon">
+            <img src="assets/images/sms-speech-bubble.png" alt="sms speech bubble">
+            <img src="assets/images/computer-screen.png" alt="Computer screen">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: auto;
+    position: relative;
+}
+/* body .captain_america, body .iron_man, body .black_widow, body .spider_man{
+    top: 47px;
+} */
+.spider_man img {
+    top: 0px;
+}
+.captain_america, .iron_man, .black_widow, .spider_man {
+    border-radius: 5px;
+    padding: 20px 12px 0px 0px;
+    width: 270px;
+    height: 140px;
+    margin: 47px 15px;
+    position: relative;
+    font-family: Verdana;
+}
+.captain_america{
+    background-image: linear-gradient(#4568DC, #B06AB3);
+    padding-left: 10px;
+}
+.iron_man{
+    background: linear-gradient(#e52d27, #b31217);
+    padding-left: 10px;
+}
+.black_widow{
+    background: linear-gradient(#000, #61045F);
+    padding-left: 10px;
+}
+.spider_man{
+    background: linear-gradient(#e52d27, #000);
+    padding-left: 10px;
+}
+.alias{    
+    color: white;
+    font-size: 12px;
+    padding-right: 2px;
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    text-align: right;
+    top: -20px;
+}
+.real_name{
+    color: rgba(255, 255,255, 0.5);
+    font-size: 9px;
+    padding-right: 2px;
+    position: relative;
+    float: right;
+    top: -25px;
+}
+img{
+    height: 182px;
+    position: absolute;
+    bottom: 0px;
+}

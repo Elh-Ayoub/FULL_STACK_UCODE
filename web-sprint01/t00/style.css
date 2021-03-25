@@ -1,0 +1,19 @@
+
+div{
+    display: inline-block;
+    margin: 5px;
+}
+img{
+    width: 450px;
+    height: 600px;
+    float: left;
+    margin: 0 5px;
+}
+#txt{
+    margin: -5px;
+}
+@media print{
+    img{
+        float: none;
+    }
+}

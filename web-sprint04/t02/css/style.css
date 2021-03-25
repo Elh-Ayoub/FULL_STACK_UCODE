@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    align-items: center;
+}
+#placeholder{
+    flex: auto;
+    visibility: hidden;
+}
+#notification{
+    background-color: rgb(103, 103, 103);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+table{
+    border: 3px solid black;
+    margin: auto;
+}
+thead td{
+    background-color: red;
+    cursor: pointer;
+}
+tbody td{
+    background-color: lightgray;
+}
+td{
+    padding: 10px 20px;
+    text-align: center;
+}

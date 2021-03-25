@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>T08</title>
+        <meta charset="utf-8">
+        <meta name="description" content="t08. Superhero Form">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Superhero Form</h1>
+    <form>
+            <fieldset>
+                <legend>About Superhero</legend><br>
+                <span>Real name</span>
+                <input type="text" placeholder="Superhero real name" required> 
+                <span>Superhero</span>
+                <input type="text" placeholder="Superhero alias"> 
+                <span>Age</span>
+                <input type="number" min="1" max="999" step="1"> 
+                <br><br>
+                <span>About</span>
+                <textarea rows="5" cols="70" maxlength="500" placeholder="Informatiom about the superhero, max 500  symbols"></textarea>
+                <br><br>
+                <span>Photo:</span>
+                    <input type="file">               
+            </fieldset>
+
+            <fieldset>
+                <legend>Powers</legend>
+                <br>
+                    <input type="checkbox"><label>Telekinesis</label>
+                    <input type="checkbox"><label>Super strength or speed</label>
+                    <input type="checkbox"><label>Shapeshifting</label>
+                    <input type="checkbox"><label>Flight</label>
+                    <input type="checkbox"><label>Elemental control</label>
+                    <input type="checkbox"><label>Other</label>
+                <br><br>
+                <span></span>
+                   <label>Level of control: </label><input type="range" min="0" max="10">
+                <br><br>
+            </fieldset>
+
+                <fieldset>
+                <legend>Origin of Powers</legend><br>              
+                <span></span>
+                    <input type="radio" name="power"><label>Unknown</label>
+                    <input type="radio" name="power"><label>Freak lab accident</label>
+                    <input type="radio" name="power"><label>Chosen by an ancient wise being</label>
+                    <input type="radio" name="power"><label>The superhero is not human</label>
+                    <input type="radio" name="power"><label>Other</label>
+                <br><br>
+                </fieldset>
+        <div>
+            <br>
+            <input type="reset" value="CLEAR">
+            <input type="submit" value="SEND"><br><br>
+        </div>
+    </form>
+    </body>
+</html>

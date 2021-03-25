@@ -1,0 +1,21 @@
+
+body .circle{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    border-radius: 50%;
+    -webkit-animation: 2s ease-in move alternate infinite;
+    animation: 2s ease-in move alternate infinite;
+}
+@-webkit-keyframes move {
+    0% {margin-left: 0px;}
+    100%{ margin-left: calc(100% - 100px);}
+}
+@keyframes move {
+    0% {margin-left:0px;}
+    100%{ margin-left:calc(100% - 100px);}
+}
+.circle:hover{
+    transition: background-color 1s ease;
+    background-color: red;
+}

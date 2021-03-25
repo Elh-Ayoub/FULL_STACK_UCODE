@@ -1,0 +1,43 @@
+#container{
+    margin: auto;
+    width: fit-content;
+}
+#add{
+    background-color: #0099cc;
+    border: none;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+#clear{
+    border: none;
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    float: right;
+}
+button{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#input{
+    width: 50em;
+    background-color: #d9d9d9;
+    padding: 15px;
+}
+#input span{
+    margin-bottom: 10px;
+}
+#input input{
+    width: 100%;
+    height: 1.5em;
+    margin-top: 5px;
+}
+#his{
+    background-color: #d9d9d9;
+    padding: 15px;
+}
+#input, #his{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+

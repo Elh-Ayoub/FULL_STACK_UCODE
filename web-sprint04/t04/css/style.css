@@ -1,0 +1,52 @@
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.list{
+    display: inline-flex;
+    margin: auto; 
+    background-color: lightgray;
+}
+.films{
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    border-right: 1px solid white;
+}
+.films li{
+    text-align: center;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.films li:hover{
+    transition: 1s ease-in-out;
+    background: #525252;
+    color: white;
+}
+.info{
+    padding: 10px;
+    align-items: center;
+}
+.info ul{
+    display: flex;
+    list-style: none;
+}
+.info ul li{
+    color: white;
+    margin-left: 10px;
+    padding: 25px 30px;
+    border-radius: 30px;
+    background-color: #0086b3;
+}
+img{
+    display: block;
+    height: 500px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+#description{
+}

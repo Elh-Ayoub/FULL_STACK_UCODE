@@ -1,0 +1,109 @@
+
+html *{
+	box-sizing: border-box;
+}
+.title{
+	text-align: center;
+}
+.block{
+	border: 1px solid gray;
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+	position: relative;
+	margin: auto;
+	padding: 20px
+}
+ul{
+	margin: 10px;
+}
+li{
+	margin: 5px;
+}
+hr{
+	color: black;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+}
+.content{
+	display: inline-block;
+	border: 1px solid gray;
+    padding: 0px 5px;
+	margin: 10px 10px;
+}
+img{
+	width: 200px;
+	height: 100px;
+}
+td, th{
+	border: 1px solid gray;
+}
+.text{
+	color: red;
+}
+.class1{
+	background-color: blue;
+	color: lime;
+	text-decoration: underline;
+	width: 150px;
+}
+.class2{
+	border: 2px solid gray;
+}
+.class3{
+	font-family: fantasy;
+}
+.class4{
+	border: 2px solid gray;
+	padding: 5px;
+}
+.class5{
+	border: 2px solid gray;
+	margin: 5px;
+}
+.class6{
+	display: none;
+}
+.class7{
+	text-shadow: 2px 2px;
+}
+@keyframes myfirst {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+.class8{
+	animation: myfirst 5s linear 2s infinite alternate;
+}
+.claas9{
+	display: flex;
+ 	background-color: darkblue;
+}
+.class9 > div {
+  text-align: center;
+  background-color: #615192;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+@media (min-width: 320px){
+	.content{
+		width: calc(100% - 20px);
+	}
+}
+@media (min-width: 768px){
+	.content{
+		width: calc(50% - 20px);
+	}
+}
+@media (min-width: 1024px){
+	.content{
+		width: calc(25% - 20px);
+	}
+}

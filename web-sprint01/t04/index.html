@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>T04</title>
+            <meta name="description" content="t04. Handbook">
+                <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="title">Informations about HTML, CSS, and Web Protocols.</h1>
+        <div class="block">
+            <div class="html_list">
+                <h1 class="title"><a href="#html">HTML</a></h1>
+                <ul>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#paragraph">Paragraphs</a></li>
+                    <li><a href="#link">Links</a></li>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#classes">Class Attribute</a></li>
+                    <li><a href="#inputs">Input Text</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#charset">Charset Attribute</a></li>
+                </ul>
+            </div>
+            <div class="css_list">
+            <h1 class="title"><a href="#css">CSS</a></h1>
+                <ul>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#containers">Containers</a></li>
+                    <li><a href="#borders">Borders</a></li>
+                    <li><a href="#fonts">Fonts</a></li>
+                    <li><a href="#padding">Padding</a></li>
+                    <li><a href="#margins">Margins</a></li>
+                    <li><a href="#display">Display</a></li>
+                    <li><a href="#shadow">Shadow</a></li>
+                    <li><a href="#animations">Animations</a></li>
+                    <li><a href="#flexbox">Flexbox</a></li>
+                </ul>
+            </div>
+            <div class="protocol">
+            <h1 class="title"><a href="#protocols">Protocols</a></h1>
+                <ul>
+                    <li><a href="#description">Protocols description</a></li>
+                    <li><a href="#http_https">HTTP/HTTPS</a></li>
+                    <li><a href="#dns">DNS</a></li>
+                    <li><a href="#ip">IP</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <h1 id="html" class="title">HTML</h1>
+        <h1 class="title">BLOCK ELEMENTS</h1>
+        <section>
+            <div class="content">
+                <p id="headings">Headings<br>HTML headings are titles or subtitles that you want to display on a webpage.
+                    <br>HTML headings are defined with the &#60;h1&#62; to &#60;h6&#62;<br> Example:  &#60;h1&#62;Heading 1&#60;/h1&#62;<br>
+                    <h1>Heading 1</h1>
+                </p>
+            </div>
+            <div class="content">
+                <p id="paragraph">Paragraphs<br>A paragraph always starts on a new line, <br>and browsers automatically add some white space (a margin)<br>before and after a paragraph.
+                    <br>&#60;p1&#62;This is a paragraph.&#60;/p1&#62;<br>
+                    <p>This is a paragraph.</p></p>
+            </div>
+            <div class="content">
+                <p id="link">Links<br>Links allow users to click their way from page to page.
+                    <br>&#60;a href:"url"&#62;This is a link&#60;/a&#62;<br><br>
+                    <a href="">This is a link</a></p>
+            </div>
+            <div class="content">
+                <p id="images">Images<br>Images can improve the design and the appearance of a web page.
+                    <br>&#60;img src:"url/direction" alt:"atlname"&#62;<br>
+                    Example: &#60;img src:"assets/images/ucode.png" alt:"ucode"&#62;<br><br>
+                    <img src="assets/images/ucode.png" alt="ucode">
+                </p>
+            </div>
+            <div class="content">
+                <p id="tables">Tables<br>HTML tables allow web developers to arrange data into rows and columns.
+                    <br>&#60;table&#62;<br>&#60;thead&#62;<br>&#60;tr&#62;<br>&#60;th&#62;this is table header&#60;/th&#62;<br>&#60;/tr&#62;
+                    &#60;/thead&#62;<br>&#60;tbody&#62;<br>&#60;tr&#62;<br>&#60;td&#62;This is table body&#60;/td&#62;<br>&#60;/tr&#62;<br>
+                    &#60;/tbody&#62;<br>&#60;/table&#62;<br>
+                    <table>
+                        <thead>
+                            <tr><th>this is table header</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>This is table body</td></tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+            <div class="content">
+                <p id="lists">Lists<br>HTML lists allow web developers to group a set of related items in lists.
+                    <br>&#60;ul&#62;<br>&#60;li&#62;Batman&#60;/li&#62;<br>&#60;li&#62;Superman&#60;/li&#62;
+                    <br>&#60;li&#62;Spider-man&#60;/li&#62;<br>&#60;/ul&#62;
+                    <ul>
+                        <li>Batman</li>
+                        <li>Superman</li>
+                        <li>Spider-man</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="content">
+                <p id="classes">Class Attribute<br>The HTML class attribute is used to specify a class for an HTML element.
+                    <br>Multiple HTML elements can share the same class.<br>
+                    &#60;div class="div1"&#62;My class is div1&#60;/div&#62;<br>
+                    <div class="div1">My class is div1</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="inputs">Input Text<br>
+                    <br>&#60;input type:"text"&#62; defines a single-line text input field
+                    <br><br><input type="text">
+                </p>
+            </div>
+            <div class="content">
+                <p id="forms">Forms<br>
+                    <br>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+                    <br>&#60;form&#62;<br>forme elements...<br>&#60;/form&#62;
+                    <form>Username: <input type="text"><br>Password :  <input type="Password"><br><input type="button" value="Log in"></form>
+                </p>
+            </div>
+            <div class="content">
+                <p id="charset">Charset Attribute<br>To display an HTML page correctly, a web browser must know which character set to use.
+                    <br>This is specified in the &#60;meta&#62; tag: &#60;meto charset:"UTF-8"&#62;
+                </p>
+            </div>
+        
+        </section>
+        <hr>
+        <h1 id="css" class="title">CSS</h1>
+        <h1 class="title">BLOCK ELEMENTS</h1>
+        <section>     
+            <div class="content">
+                <p id="colors">Colors<br>Can be used to color any HTML element:<br>
+                    <br>&#60;div class=".text"&#62;Text&#60;/div&#62;<br>.text{<br>color: red;<br>}
+                    <div class="text">Text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="containers">Containers<br>To use a container, just add a class to any element, The container can be used to style.<br>
+                    <br>&#60;div class="class1"&#62;Header&#60;/div&#62;<br>.class1{<br>background-color: blue;<br>color: lime;<br>text-decoration: underline;<br>width: 150px;}
+                    <div class="class1">Header</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="borders">Borders<br>Use a container, to add brder to any element.<br>
+                    <br>&#60;div class="class2"&#62;This is text&#60;/div&#62;<br>.class2{border: 2px solid gray;}
+                    <div class="class2">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="fonts">Fonts<br>you can use 4 different built-in font classes.<br>
+                    <br>&#60;div class="class3"&#62;This is text&#60;/div&#62;<br>.class3{font-family: fantasy;}
+                    <div class="class3">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="padding">Padding<br>you can add top, bottom, right, and left padding to any HTML element.<br>
+                    <br>&#60;div class="class4"&#62;This is text&#60;/div&#62;<br>.class4{border: 2px solid gray;<br>padding: 5px;}
+                    <div class="class4">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="margins">Margins<br>you can add top, bottom, right, and left margins to any HTML element.<br>
+                    <br>&#60;div class="class5"&#62;This is text&#60;/div&#62;<br>.class5{border: 2px solid gray;<br>margin: 5px;}
+                    <div class="class5">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="display">Display<br>allow you to display HTML elements in specific types(floating, Hide and Show...) inside other HTML elements.<br>
+                    <br>&#60;div class="class6"&#62;This is text&#60;/div&#62;<br>.class6{display: none}
+                    <div class="class6">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="shadow">Shadow<br>With CSS you can add shadow to text and to elements.<br>The CSS text-shadow property applies shadow to text.<br>
+                    <br>&#60;div class="class7"&#62;This is text&#60;/div&#62;<br>.class7{text-shadow: 2px 2px;}
+                    <div class="class7">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="animations">Animations<br>CSS allows animation of HTML elements without using JavaScript or Flash!<br>
+                    CSS styles inside the @keyframes rule, <br>the animation will gradually change from the current style to the new style at certain times.<br>@keyframes myfirst {<br>0%   {background-color:red;}<br>25%  {background-color:yellow;}<br>50%  {background-color:blue;}<br>75%  {background-color:green;}<br>100% {background-color:red;}}
+                    <br>&#60;div class="class8"&#62;This is text&#60;/div&#62;<br>.class8{animation: myfirst 5s linear 2s infinite alternate;}
+                    <div class="class8">This is text</div>
+                </p>
+            </div>
+            <div class="content">
+                <p id="flexbox">Flexbox<br>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.<br>
+                    <br>&#60;div class="class9"&#62;<br>&#60;div&#62;1&#60;/div&#62;<br>&#60;div&#62;2&#60;/div&#62;<br>
+                    &#60;div&#62;3&#60;/div&#62;<br>&#60;/div&#62;<br>.class9{text-shadow: 2px 2px;}
+                    <div class="class9">
+                        <div>1</div><div>2</div><div>3</div>
+                    </div>
+                </p>
+            </div>
+       
+    </section>
+        <hr>
+        <h1 id="protocols" class="title">Protocols</h1>
+        <h1 class="title">BLOCK ELEMENTS</h1>
+        <section>
+            <div class="content">
+                <p id="description"><b>Description</b><br>A protocol is a standard set of rules that allow electronic devices to communicate with each other.<br> These rules include what type of data may be transmitted,<br> what commands are used to send and receive data, and how data transfers are confirmed.<br> You can think of a protocol as a spoken language.</p>
+            </div>
+            <div class="content">
+                <p id="http_https"><b>HTTP:</b><br>HTTP is Hypertext transfer protocol. <br> Simply put - Rules to sending and receiving text-based messages.<br>  As we all know, computers work in a language of 1's and 0's i.e. <br> Binary language. Therefore, potentially every set of 1's and 0's construct something,<br>  it could be a word.Using HTTP, you can definitely transfer images and text and even sound, but not videos.</p>
+                <p><b>HTTPS:</b><br>Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP,<br>  the protocol over which data is sent between your browser and the website that you are connected to.<br>  The 'S' at the end of HTTPS stands for 'Secure'. <br> It means all communications between your browser and the website are encrypted. <br> HTTPS is often used to protect highly confidential online transactions like online banking and online shopping order forms.</p>
+            </div>
+            <div class="content">
+                <p id="dns"><b>DNS Protocol</b><br>Resource Records are used to store hostnames,<br> IP addresses and other information in DNS name servers.<br> A record is made up of the following fields:<br><br>
+                <b>Name Server records (NS): </b> specifies the authoritative name server for a DNS zone.<br><br>
+                <b>IPv4 Address Mapping records (A): </b>a hostname and its IPv4 address.<br><br>
+                <b>IPv6 Address records (AAAA): </b>a hostname and its IPv6 address.<br><br>
+                <b>Canonical Name records (CNAME): </b>points a hostname to an alias.<br><br>
+                <b>Mail eXchanger record (MX): </b>specifies an SMTP email server for the domain.</p>
+            </div>
+            <div class="content">
+                <p id="ip"><b>How to determine an IP address on a Network:</b><br>
+                <ol>
+                    <li><b>Open the command prompt.</b></li>
+                    <li><b>Enter the command “ipconfig” for Mac or “ifconfig” on Linux.</b> <br>Your computer will then display its own IP address, <br>subnet mask, gateway address, and more,<br> making it possible for you to determine the network number you’ll be scanning. <br>For example, in a Class C IPv4 network—which most small local networks<br> are wont to be—you may find your computer’s <br>IP address is, let’s say, 192.168.1.75. <br>If the subnet mask is 255.255.255.0, <br>then you know the first 3 bytes are the network ID (192.168.1) <br>and your broadcast IP address is 192.168.1.255.</li>
+                    <li><b>Next, input the command “arp -a”.</b> <br>ARP stands for “Address Resolution Protocol,” <br>and the “-a” appendage of the command prompts <br>the device to list all the IP addresses found within the ARP cache for the associated network.<br> In other words, the “arp -a” command displays all active IP addresses connected<br> to the local network. <br>This list is incredibly informative, containing the IP addresses,<br> MAC addresses, and allocation type (whether static or dynamic) for all live hosts.</li>
+                    <li><b>Optional: Input the command “ping -t”.</b> <br>The “ping -t” command allows you to perform an extended ping on the <br>list produced by the previous command,<br> testing connectivity and latency within the network.<br> This will enable you to further narrow down what <br>devices could be experiencing or causing problems.</li>
+                </ol>
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

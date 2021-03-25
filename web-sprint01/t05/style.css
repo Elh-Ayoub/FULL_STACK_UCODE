@@ -1,0 +1,22 @@
+h1{
+	text-align: center;
+}
+#find{
+    color: gray;
+}
+input{
+    color: green;
+    width: 100%; 
+}
+div{
+	display: flex;
+	margin: auto;
+    height: 2em;
+    padding: 0 10px;
+}
+input:hover{
+    color: red;
+}
+#find:hover{
+    color: red;
+}

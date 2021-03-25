@@ -1,0 +1,48 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+    text-align: center;
+    height: 1.5em;
+}
+.content{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.btns{
+    display: block;
+    justify-content: space-between;
+}
+#image{
+    width: 500px;
+    height: 500px;
+}
+
+.calories{
+    display: flex;
+    padding: 10px 20px;
+    width: fit-content;
+}
+#paragraph, .calories, .title{
+    display: block;
+    font-size: 35px;
+    background-color: #669999;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black;
+}
+
+button{
+    background: linear-gradient(90deg, #334d4d, #b3cccc);
+    margin: auto 20px;
+    padding: 15px 50px;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+    box-shadow: 2px 2px 8px black;
+}
+button:hover{
+    background: linear-gradient(90deg, #b3cccc, #334d4d);
+    text-shadow: 2px 2px 8px rgb(188, 252, 103);
+}

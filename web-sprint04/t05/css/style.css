@@ -1,0 +1,50 @@
+#container {
+    margin: 10px;
+    height: 600px;
+    border: 1px solid black;
+}
+#container div {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+#container div[move = "on"]{ 
+    border: 2px dashed black; 
+}
+#diamond1 {
+    float: left;
+    left: 48%;
+    top: 30%;
+    background-color: #D21F3C;
+}
+#diamond2 {
+    left: 25%;
+    top: 20%;
+    background-color: rgb(61, 145, 61);
+}
+#diamond3 {
+    float: left;
+    left: 34%;
+    top: 27%;
+    background-color: rgb(80, 80, 213);
+}
+#diamond4 {
+    left: 28%;
+    top: 9%;
+    background-color: rgb(240, 240, 104);
+}
+#diamond5 {
+    left: 27%;
+    top: 35%;
+    background-color: rgb(252, 78, 107);
+}
+#diamond6 {
+    left: 46%;
+    top: 18%;
+    background-color: rgb(97, 31, 97);
+}
