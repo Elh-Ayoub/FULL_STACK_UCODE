@@ -13,7 +13,7 @@
             $this->power = $power;
         }
         public function __invoke(){
-            echo $this->alias."\n";
+            echo strtoupper($this->alias)."\n";
             foreach($this->power as $p){
                 echo $p. "\n";
             }

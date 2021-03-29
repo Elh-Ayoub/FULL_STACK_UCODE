@@ -1,4 +1,4 @@
-<?php 
+<?php
     class Ant
     {
         public $name;
@@ -14,27 +14,12 @@
             $this->number_of_fights = $number_of_fights;
             $this->number_of_legs = $number_of_legs;
         }
-        // public function __toString()
-        // {
-        //     $this->__unserialize();
-        //     return null;
-        // }
-        // function  __unserialize($data)
-        // {
-        //     // print_r($data);
-        //     // foreach($data as $k => $d){
-        //     //     echo $k . ": " . $d . "\n";
-        //     // }
-        //     var_dump(unserialize($data));
-        //     //
-           
-        // }
-        public function __wakeup() :void
+        public function __wakeup()
         {
-            echo "name: " . $this->name . " \n" . 
+            echo "name: " . $this->name . " \n". 
              "role_in_army: " .  $this->role_in_army . "\n" . 
              "date_of_entry: " . $this->date_of_entry . "\n" .
-             "number_of_fights: " . $this->number_of_fights . "\n" . 
+             "number_of_fights: " . $this->number_of_fights . "\n". 
              "number_of_legs: " . $this->number_of_legs . "\n";
         }
     }
