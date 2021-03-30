@@ -5,7 +5,8 @@ use \Datetime;
 function calculate_time()
 {
     $from = new DateTime("1939-01-01");
-    $dif = $from->diff(new DateTime("now"));
+    $now = new DateTime('now');
+    $dif = date_diff($now, $from);
     $Years = 0;
     for($i = 0; $i<$dif->format("%Y"); $i++){
         if($i % 7 == 0)
