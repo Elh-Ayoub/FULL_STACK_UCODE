@@ -8,21 +8,19 @@
 </head>
 <body>
 <?php
-        $input = [
-            "name" => $_POST['name'],
-            "email" => $_POST['email'],
-            "age" => $_POST['age'],
-            "description" => $_POST['about'],
-            "photo" => $_POST['file']
-        ];
-            echo("<fieldset style=\"background: gray;\">
-            <br><span>POST</span><br>
-            <pre>");
-            print_r($input);
-            echo("</pre>
-            </fieldset>");
+    $input = [
+        "name" => $_POST['name'],
+        "email" => $_POST['email'],
+        "age" => $_POST['age'],
+        "description" => $_POST['about'],
+        "photo" => $_POST['file']
+    ];
+    echo("<fieldset style=\"background: gray;\">
+    <br><span>POST</span><br><pre>");
+    print_r($input);
+    echo("</pre></fieldset>");
         
-    ?>
+?>
     <form action="index.php" method="POST"><br>
     <fieldset style="padding: 25px;">
         <fieldset><br>
