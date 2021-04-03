@@ -1,5 +1,5 @@
 <?php
-    class File extends FilesList{
+    class File{
         public $path;
         public $name;
         public $content = "";
@@ -10,18 +10,28 @@
             $this->create($this->path);
         }
         public function create($path){
-            $myfile = fopen("./t04/".$path.".txt", "w+");
-            $this->file = $myfile;
+                $i = 2;
+                $p = $path.".txt";
+                while (true) {
+                    if (!file_exists($p)){
+                        $myfile = fopen($p, "w+");
+                        $this->file = $myfile;
+                        break;
+                    }else{
+                        $p = $path."$i.txt";
+                        $i++;
+                    }
+                }
         }
         public function write($content){
             $this->content .= $content;
             fwrite($this->file, $content);
         }
-        public function read(){
-           return $this->content;
+        public function toList(){
+           return file_get_contents($this->path.".txt"). "\n";
         }
     }
-    $file= new File( "tmp/tony_stark_characteristic");
-    $file->write("volatile, self-obsessed, don't play well with others.");
-    echo $file->read();
+    // $file= new File( "tmp/tony_stark_characteristic");
+    // $file->write("volatile, self-obsessed, don't play well with others.");
+    // echo $file->toList();
 ?>

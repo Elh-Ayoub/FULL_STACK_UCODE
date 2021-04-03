@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+form {
+    margin-left: calc(50% - 150px);
+}
+input[type="submit"] {
+    margin-left: 140px;
+}
+input[type="text"] {
+    width: 300px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min-content;
+    margin-top: 20px;
+    margin-left: calc(50% - 325px);
+}
