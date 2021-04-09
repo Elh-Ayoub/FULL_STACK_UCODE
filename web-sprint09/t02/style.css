@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+.reg-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+}
+.reg-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.reg-box .user-box {
+    position: relative;
+}
+.reg-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .reg-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+.reg-box .user-box input:focus ~ label,
+.reg-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+#btn_sub{
+    color: #03e9f4;
+    background: transparent;
+    border: none;
+    font-size: larger;
+    padding: 10px 20px;
+    display: flex;
+    margin: auto;
+}
+#btn_sub:hover{
+    background:  #243b55;
+}
+#alert{
+  display: grid;
+  color: rgba(0,0,0,.6);
+  grid-auto-rows: 30px;
+  font-size: 25px;
+  margin-top: 830px;
+  -webkit-text-stroke: 1px cyan;
+  text-align: center;
+}
+#forLoging{
+    color: white;
+    font-size: 25px;
+    -webkit-text-stroke: 1px cyan;
+}
+/* #alert{
+    position: absolute;
+    color: rgba(0,0,0,.6);
+    font-size: 25px;
+    top: 70%;
+    right: 34%;
+    margin: auto;
+    -webkit-text-stroke: 1px cyan;
+    text-align: center;
+} */
