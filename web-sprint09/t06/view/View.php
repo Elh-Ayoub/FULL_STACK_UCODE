@@ -8,6 +8,4 @@
             echo $this->content;
         }
     }
-    // $view = new View("index.html");
-    // $view->render();
 ?>

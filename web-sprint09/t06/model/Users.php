@@ -1,12 +1,13 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-include('./models/Model.php');
+include('Model.php');
 class Users extends Model {
     public $id;
     public $login;
     public $password;
     public $full_name;
     public $email;
+    public $status;
 
     public function __construct() {
         parent::__construct("users");
@@ -15,10 +16,10 @@ class Users extends Model {
         $this->connection = null;
     }
 
-    public function find($id)
+    public function find($login)
     {
         if ($this->connection->getConnectionStatus()) {
-            $result = $this->connection->connection->query("SELECT * FROM $this->table WHERE id=$id");
+            $result = $this->connection->connection->query("SELECT * FROM $this->table WHERE login='$login'");
             $pdo = $result->fetch(PDO::FETCH_ASSOC);
             if ($pdo) {
                 $this->id = $pdo["id"];
@@ -26,13 +27,10 @@ class Users extends Model {
                 $this->password = $pdo["password"];
                 $this->full_name = $pdo["full_name"];
                 $this->email = $pdo["email"]; 
-                echo("id: ".$this->id."\n".
-                "login: ".$this->login."\n".
-                "password: ".$this->password."\n".
-                "full_name: ".$this->full_name."\n".
-                "email: ".$this->email."\n");
+                $this->status = $pdo["status"];
+                return true;
             }
-            else echo("Row with id: ".$id." not found\n");
+            else return false;
         }
     }
     public function delete()
@@ -50,6 +48,7 @@ class Users extends Model {
                 $this->password = null;
                 $this->full_name = null;
                 $this->email = null;
+                $this->status = null;
             }
             else echo("Nothing Deleted\n");
         }
@@ -61,14 +60,20 @@ class Users extends Model {
                 $password = $this->password;
                 $full_name = $this->full_name;
                 $email = $this->email;
-                $sql = "INSERT INTO `users` (login, password, full_name, email) VALUES (\"$login\", \"$password\", \"$full_name\", \"$email\")";
-                $syst = $this->connection->connection->prepare($sql);
-                try{
-                    $syst->execute();
-                    
-                }catch(PDOException $e){
+                $find = $this->find($login);
+                if($find){
+                    $sql = "INSERT INTO `users` (login, password, full_name, email) VALUES (\"$login\", \"$password\", \"$full_name\", \"$email\")";
+                    $syst = $this->connection->connection->prepare($sql);
+                    try{
+                        $syst->execute();
+                    }catch(PDOException $e){
+                    }
+                    echo "<p id=alert><b>$login You've registred successfully!</b></p>";
+                }else{
+                    echo "<p id=alert><b>$login Already exist!</b></p>";
                 }
-                echo "<p id=alert><b>$login You've registred successfully!</b></p>";
+                
+                
         }
     }
 }
